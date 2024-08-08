@@ -1,0 +1,19 @@
+<div class="products-page">
+    <div class="container">
+        @for (shoe of allShoes; track $index) {
+            <div class="product">
+                <div class="image">
+                    <img src="{{shoe.image}}" alt="">
+                </div>
+                <div class="product-details">
+                    <span class="name">{{shoe.name}}</span>
+                    <span class="material-kind">{{shoe.materials}}</span>
+                    <div class="price">
+                        <span class="price-figures">{{shoe.price}}</span>
+                        <sub class="price-currency">EUR</sub>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
